@@ -72,7 +72,9 @@ LOCAL_SRC_FILES :=\
 	zip_unchange_archive.c \
 	zip_unchange_data.c
 
+LOCAL_C_INCLUDES += external/zlib
+
 LOCAL_LDLIBS := -lz
 
-#include $(BUILD_SHARED_LIBRARY)
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
+# include $(BUILD_STATIC_LIBRARY)
